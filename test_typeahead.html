@@ -1,0 +1,43 @@
+<head>
+  <title>test_typeahead</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  <table>
+    <tr>
+      <th>One</th>
+      <th>Two</th>
+    </tr>
+    <tr>
+      <td>Flavor 1</td>
+      <td>
+        <input class="form-control typeahead" name="team" type="text"
+               placeholder="" autocomplete="on" spellcheck="off" data-source="nba"/>
+      </td>
+   </tr>
+   <tr>
+      <td>Flavor 2</td>
+      <td>
+        <input class="form-control typeahead" name="team" type="text"
+               placeholder="" autocomplete="on" spellcheck="off" data-source="nba"/>
+      </td>
+   </tr>
+   <tr>
+      <td>Flavor 3</td>
+      <td>
+        <input class="form-control typeahead" name="team" type="text"
+               placeholder="" autocomplete="on" spellcheck="off" data-source="nba"/>
+      </td>
+    </tr>
+  </table>
+
+</template>
